@@ -78,3 +78,64 @@ html,body{
     color: #fff;
     background-color: #000;
 }
+#featured{
+    padding: 9vw 15vw ;
+}
+.fheading h1{
+    line-height: 1;
+    font-size: 4vw;
+    font-weight: 500;
+}
+.fheading h1:nth-child(2){
+    color: transparent;
+    -webkit-text-stroke: 1px #000 ;
+}
+#f-images{
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+
+    margin-top: 5vw;
+    height: 100vh;
+}
+#f-left{
+    width: 45%;
+    height: inherit;
+    border: 1px solid blue;
+    overflow: hidden;
+}
+#f-right{
+    width: 45%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+#rgt-img{
+    width: 90%;
+    background-color: aqua;
+    height: 90%;
+}
+.fleftelem{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.fleftelem h1{
+    font-size: 2.6vw;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin: 1.4vw 0;
+    line-height: 1;
+}
+.fleftelem h3{
+    font-size: 1.3vw;
+    font-weight: 450 ;
+}
+.fleftelem h4{
+    opacity: .7;
+}
