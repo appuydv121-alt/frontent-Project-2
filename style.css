@@ -94,14 +94,13 @@ html,body{
     justify-content: space-between;
     display: flex;
     width: 100%;
-
     margin-top: 5vw;
     height: 100vh;
 }
 #f-left{
     width: 45%;
     height: inherit;
-    border: 1px solid blue;
+   
     overflow: hidden;
 }
 #f-right{
@@ -127,15 +126,30 @@ html,body{
 }
 .fleftelem h1{
     font-size: 2.6vw;
-    font-weight: 400;
+    font-weight: 590;
     text-transform: capitalize;
     margin: 1.4vw 0;
     line-height: 1;
 }
 .fleftelem h3{
-    font-size: 1.3vw;
-    font-weight: 450 ;
+    font-size: 1.4vw;
+    font-weight: 580 ;
 }
 .fleftelem h4{
+    line-height:.01;
     opacity: .7;
+}
+#btndiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#btndiv button{
+    padding: 1vw 2.5vw;
+    border-radius:1.9vw ;
+    font-size: 1.2vw;
+    background-color: #fff;
+    border: .14vw solid #e6e6e6;
+    font-weight: 590;
 }
