@@ -58,7 +58,9 @@ html,body{
     display: flex;
     gap: 4vw;
 }
-
+#home-main .heading h1:hover{
+    color: #000;
+}
 #home-main .heading h1{
     font-size: clamp(25px , 7vw , 1000px);
     font-weight: 900;
@@ -97,11 +99,13 @@ html,body{
     width: 100%;
     margin-top: 5vw;
     height: 100vh;
+
 }
+
 #f-left{
     width: 45%;
     height: inherit;
-   
+    
     overflow: hidden;
 }
 #f-right{
@@ -110,11 +114,12 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-
+   
+    
 }
-#rgt-img{
+#f-right .images{
     width: 90%;
-    background-color: aqua;
+    overflow: hidden;
     height: 90%;
 }
 .fleftelem{
@@ -137,8 +142,10 @@ html,body{
     font-weight: 580 ;
 }
 .fleftelem h4{
-    line-height:.01;
+    
     opacity: .7;
+    font-size: 2.3vw;
+    
 }
 .btndiv{
     display: flex;
@@ -184,7 +191,7 @@ html,body{
     width: 100%;
     height: 12.5vw;
 
-    background-image: url(./slides\ image1.jpg);
+    background-image: url(./image1.jpg);
 }
 .slide .tag{
     margin: .7vw 0;
@@ -201,12 +208,12 @@ html,body{
 .slide h3{
     font-size:1.4vw ;
 }
-#rgt-img .images{
+#f-right .images img{
     width: 100%;
-    overflow: hidden;
     object-fit: cover;
     height: 100%;
 }
-#rgt-img {
-    overflow: hidden;
+
+.btndiv{
+    margin-top: 3vw;
 }
