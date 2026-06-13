@@ -156,7 +156,7 @@ html,body{
 }
 #dev{
     width: 100%;
-    padding: 4vw 18vw ;
+    padding: 4vw 16vw ;
 
 }
 #dev h1{
@@ -174,7 +174,7 @@ html,body{
 #slides{
     width: 100%;
     display: flex;
-    padding: 3vw 13vw;
+    padding: 2vw 13vw;
     justify-content: space-between;
 }
 .slide {
@@ -200,4 +200,13 @@ html,body{
 }
 .slide h3{
     font-size:1.4vw ;
+}
+#rgt-img .images{
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    height: 100%;
+}
+#rgt-img {
+    overflow: hidden;
 }
