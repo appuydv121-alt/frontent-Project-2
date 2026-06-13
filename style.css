@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+*::selection{
+    color: #fff;
+    background-color:#000;
+}
 a{
     text-decoration: none;
     color: black;
@@ -74,10 +78,7 @@ html,body{
 #home-last{
     padding: 3vw 13vw;
 }
-#home-last p::selection{
-    color: #fff;
-    background-color: #000;
-}
+
 #featured{
     padding: 9vw 15vw ;
 }
@@ -139,17 +140,64 @@ html,body{
     line-height:.01;
     opacity: .7;
 }
-#btndiv{
+.btndiv{
     display: flex;
     align-items: center;
     justify-content: center;
     
 }
-#btndiv button{
+.btndiv button{
     padding: 1vw 2.5vw;
     border-radius:1.9vw ;
     font-size: 1.2vw;
     background-color: #fff;
     border: .14vw solid #e6e6e6;
     font-weight: 590;
+}
+#dev{
+    width: 100%;
+    padding: 4vw 18vw ;
+
+}
+#dev h1{
+    font-size: 4vw;
+    font-weight: 550;
+    width: 50%;
+    line-height: 1;
+}
+#dev p{
+    font-weight: 400;
+    font-size: 1.3vw;
+    width: 60%;
+    margin-top: 3vw;
+}
+#slides{
+    width: 100%;
+    display: flex;
+    padding: 3vw 13vw;
+    justify-content: space-between;
+}
+.slide {
+    width: 30%;
+}
+.slide .img{
+    width: 100%;
+    height: 12.5vw;
+
+    background-image: url(./slides\ image1.jpg);
+}
+.slide .tag{
+    margin: .7vw 0;
+    width: fit-content;
+    border-radius: 2vw;
+    background-color: #f7f7f7;
+    padding: .7vw;
+}
+.slide .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slide h3{
+    font-size:1.4vw ;
 }
