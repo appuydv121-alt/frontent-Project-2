@@ -37,7 +37,7 @@ ScrollTrigger.scrollerProxy("#main", {
 ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 ScrollTrigger.refresh();
 Shery.hoverWithMediaCircle(".hvr" , {
-    images : [ "./image4.jpg" ,"./cookies.avif" , "./image3.jpg"]
+    images : [ "./image4.jpg" ,"./drinkimage.avif" , "./image3.jpg"]
 });
 gsap.registerPlugin(ScrollTrigger);
 gsap.to(".fleftelem" , {
@@ -114,3 +114,20 @@ gsap.timeline({
     duration: 1,
     ease: "power3.out"
 }, "-=0.3");
+
+var tl = gsap.timeline();
+tl.from("#nav" , {
+    y:-50,
+    opacity:0,
+       
+})
+.from(".hvr1" , {
+    y:-50,
+    opacity:0,
+    stagger:.3
+})
+.from(".hvr",{
+    y:-50,
+    opacity:0,
+    stagger:.3
+})

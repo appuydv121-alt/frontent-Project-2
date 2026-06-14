@@ -277,3 +277,6 @@ html,body{
 .char{
     display: inline-block;
 }
+#footer a:hover{
+    text-decoration: underline;
+}
