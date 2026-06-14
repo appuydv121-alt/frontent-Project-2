@@ -37,7 +37,7 @@ ScrollTrigger.scrollerProxy("#main", {
 ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 ScrollTrigger.refresh();
 Shery.hoverWithMediaCircle(".hvr" , {
-    images : [ "./image4.jpg" ,"./image1.jpg" , "./image3.jpg"]
+    images : [ "./image4.jpg" ,"./cookies.avif" , "./image3.jpg"]
 });
 gsap.registerPlugin(ScrollTrigger);
 gsap.to(".fleftelem" , {
