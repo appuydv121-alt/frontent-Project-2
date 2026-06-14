@@ -223,3 +223,57 @@ html,body{
 .slide .img3{
     background-image: url("https://plus.unsplash.com/premium_photo-1781039804561-edc6d8688859?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMzB8fHxlbnwwfHx8fHw%3D");
 }
+#footer{
+    background-color: #000;
+    padding: 10vw 10vw;
+}
+#footer *{
+    color: #fff;
+}
+#footerh11{
+    font-size: 6vw;
+}
+#footerh12{
+    font-size: 6vw;
+    font-weight: 400;
+}
+#lastfooter{
+    display: flex;
+    
+    margin-top: 15vw;
+}
+#lastfooterleft{
+    margin-right: 25vw;
+    
+    width: 50%;
+}
+#lastfooterright{
+    display: flex;
+    justify-content: space-between;
+  
+    width: 100%;
+    
+}
+.end{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#lastfooterleft h3{
+    margin-top: 2vw;
+}
+#lastfooterleft a{
+    display: inline-block;
+    margin-bottom: 2vw;
+}
+#footer{
+    margin-top: 5vw;
+}
+#footer h1{
+    overflow: hidden;
+    line-height: 1;
+}
+
+.char{
+    display: inline-block;
+}

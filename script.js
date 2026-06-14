@@ -1,9 +1,9 @@
 Shery.mouseFollower()
 
-const scroll = new LocomotiveScroll({
-    el: document.querySelector('#main'),
-    smooth: true
-});
+// const scroll = new LocomotiveScroll({
+//     el: document.querySelector('#main'),
+//     smooth: true
+// });
 
 Shery.makeMagnet(".magnet")
 const locoScroll = new LocomotiveScroll({
@@ -73,3 +73,44 @@ Shery.imageEffect(".images", {
 
   },
 });
+
+// Footer Text Animation
+
+const text1 = new SplitType("#footerh11");
+const text2 = new SplitType("#footerh12");
+
+gsap.set([...text1.chars, ...text2.chars], {
+    y: 120,
+    opacity: 0
+});
+
+ScrollTrigger.refresh();
+
+gsap.timeline({
+    scrollTrigger: {
+        trigger: "#footer",
+        scroller: "#main",
+        start: "top 80%",
+        toggleActions: "play none none reverse"
+    }
+})
+.to(text1.chars, {
+    y: 0,
+    opacity: 1,
+    stagger: 0.03,
+    duration: 0.8,
+    ease: "power4.out"
+})
+.to(text2.chars, {
+    y: 0,
+    opacity: 1,
+    stagger: 0.03,
+    duration: 0.8,
+    ease: "power4.out"
+}, "-=0.5")
+.from("#lastfooter", {
+    y: 50,
+    opacity: 0,
+    duration: 1,
+    ease: "power3.out"
+}, "-=0.3");
